@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Proj3GUI</string>
+    <string name="title_activity_list_display">ListDisplay</string>
+</resources>

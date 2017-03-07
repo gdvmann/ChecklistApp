@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:weightSum="1">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="316dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/newItemText"
+            android:layout_gravity="left|center_vertical"
+            android:text="New Item" />
+
+        <Button
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:text="ADD"
+            android:id="@+id/addItemBtn"
+            android:layout_gravity="right|center_vertical"
+            android:onClick="addItem" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_weight="1.08">
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/newItemsView"
+            android:layout_centerHorizontal="true"
+            android:choiceMode="singleChoice" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="71dp">
+
+        <Button
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:text="Remove"
+            android:id="@+id/removeItemBtn"
+            android:layout_gravity="center_horizontal|top"
+            android:onClick="removeClick" />
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="Alerts"
+            android:id="@+id/alertBtn"
+            android:layout_gravity="right|top"
+            android:onClick="switcher" />
+
+        <Button
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:id="@+id/saveItemBtn"
+            android:layout_gravity="left|top"
+            android:onClick="saver" />
+    </FrameLayout>
+</LinearLayout>
